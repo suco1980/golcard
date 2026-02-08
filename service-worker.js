@@ -1,14 +1,4 @@
-<<<<<<< HEAD
-// self.addEventListener("install", event => {
-//   console.log("Service Worker instalado");
-// });
 
-// self.addEventListener("activate", event => {
-//   console.log("Service Worker activado");
-// });
-=======
-
->>>>>>> 86b7a48436d1dcf39dba7c3129e36d24d0ef715e
 const CACHE_NAME = "khauling-v1";
 const FILES_TO_CACHE = [
   "/",
