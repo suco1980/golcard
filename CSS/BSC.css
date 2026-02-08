@@ -1,0 +1,164 @@
+body{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    background: #f3f3f3;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.card__container{
+    width: 100%;
+    max-width: 360px;
+    background: #fff;
+    border-radius: 18px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.imge{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.logo{
+    width: 90px;
+    height: auto;
+}
+
+.title{
+    margin: 10px 0 5px;
+    font-size: 1.45rem;
+    text-align: center;
+}
+
+.profile-photo{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 5px auto 10px;
+   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    
+}
+.profile-photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.role{
+    color: #000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.inf__details{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.inf__details a{
+    min-width: 48px;
+    min-height: 48px;
+    background: #f2f2f2;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.fa-mobile{color: #000;}
+.fa-envelope{color: #EA4335;}
+.fa-globe{color: #00b0f0;}
+
+
+.inf__details a:hover i{
+    opacity: 0.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.social__container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+.social__container a{
+    font-size: 1.4rem;
+    color: #555;
+    margin: 0 10px;
+}
+
+
+.save-line{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    min-height: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+
+.save-contact{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 18px;
+    background: linear-gradient(135deg, #111, #333);
+    color: #fff;
+    font-size: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.save-contact:hover{
+    background: #fff;
+    color: #000;
+    border : 2px solid #000;
+}
+.save-line.active .save-contact{
+    background: #00b0f0 !important;
+    border: none;
+    color: #fff;
+}
+
+.fa-facebook{ color: #1877f2;}
+.fa-instagram{ color: #e4405f;}
+.fa-x-twitter{ color: #1da1f2;}
+.fa-youtube{ color: #ff0000;}
+
+.social__container a:hover i{
+    opacity: 0.6;
+}
+
+/* ======================================================================================= */
+@keyframes fadeup{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.card__container {
+    animation: fadeup 0.6s  ease-out;
+}
+
+

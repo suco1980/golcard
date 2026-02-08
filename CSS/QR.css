@@ -1,0 +1,94 @@
+.qr-page{
+     margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    background: #f3f3f3;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.card__container{
+     width: 100%;
+    max-width: 360px;
+    background: #fff;
+    border-radius: 18px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+
+
+.imge{
+     display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.logo{
+     width: 90px;
+    height: auto;
+}
+
+
+.title{
+     margin: 10px 0 5px;
+    font-size: 1.45rem;
+    text-align: center;
+}
+
+
+.role{
+     color: #000;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+#qr-code{margin: 18px 0 8px;}
+
+
+
+.hint{
+    font-size: 13px;
+     color: #000;
+    text-align: center;
+    margin-bottom: 8px 0 16px;
+    line-height: 1.4;
+}
+
+
+.view-btn{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px;
+    background: linear-gradient(135deg, #111, #333);
+    color: #fff;
+    font-size: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 6px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.view-btn:hover{
+    background: #fff;
+    color: #000;
+    border : 2px solid #000;
+}
+@media(max-width: 360px){
+    .qr-hint{
+        font-size: 12px;
+    }
+    view-btn{
+        font-size: 14px;
+    }
+}
